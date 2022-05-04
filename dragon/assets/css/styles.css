@@ -117,23 +117,31 @@ text-align: center;
 
 /*-----Custom List-----*/
 
-.custom-list .mission-row{
+.mission-row{
     text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
-.mission-date {
+.mission-row:last-child{
+    border: none;
+}
+.mission-item{
     display: inline-block;
-    padding-right: .5em;
+    padding-left: .5em;
+}
+
+.mission-date {
+    width: 15%;
 }
 .mission-customer {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
+    width: 40%;
 }
 .mission-site {
-    width: 24%;
+    width: 20%;
 }
 .mission-vehicle {
-    width: 42%;
+    width: 10%;
 }
 
 /* -----summary details-----*/
@@ -147,4 +155,12 @@ details summary{
     cursor:default;
     list-style: none;
 }
-
+.collapsible-content{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+}
+summary{
+    margin: 1em;
+}
