@@ -1,0 +1,138 @@
+/*-----Font Import-----*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&display=swap');
+/*Thin 100
+Light 300
+Regular 400
+Medium 500
+Bold 700*/
+
+@font-face {
+    font-family: "Barlow Condensed - Thin";
+    src: url("../font/BarlowCondensed-Thin.ttf");
+    font-style:normal;
+    font-weight: 100;
+
+}
+@font-face {
+    font-family: "Barlow Condensed - Light";
+    src: url("../font/BarlowCondensed-Light.ttf");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Barlow Condensed - Regular";
+    src: url("../font/BarlowCondensed-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Barlow Condensed - Medium";
+    src: url("../font/BarlowCondensed-Medium.ttf");
+    font-style: normal;
+    font-weight: 500;
+    
+}
+@font-face {
+    font-family: "Barlow Condensed - Bold";
+    src: url("../font/BarlowCondensed-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+}
+.wide-font{
+    letter-spacing: 0.2em;
+}
+/*-----Box Sizing-----*/
+*{
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: azure;
+}
+*, *::before, ::after{
+    box-sizing: inherit;
+}
+html, body{
+    background-color: rgb(35, 37, 40);
+    margin: 0;
+    padding: 0;
+}
+/*-----Header Format-----*/
+.main-header{
+    background-color: rgba(56, 53, 53, 0.309);
+    background-image: url("../images/header-background.jpeg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 25px;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(240, 255, 255, 0.241);
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.page-name{
+    text-align: center;
+    margin: 0px;
+    font-family: "Barlow Condensed - Medium";
+    font-size: 4em;
+}
+
+/*-----General Nav-----*/
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display: inline;
+}
+.nav a{
+    display: inline-block;
+    /*allows padding to apply to top + bottom
+    regardless of being inline element*/
+    padding: 20px;
+    text-decoration: none;
+}
+.nav a:hover{
+    background-color:rgba(211, 211, 211, 0.308);
+}
+/*-----General Content------*/
+
+.content-section{
+    margin: 20px;
+}
+.container{
+    width: 80vw;
+    margin: 40px auto;
+}
+.section-header{
+    font-family: "Barlow Condensed - Medium";
+    text-align: center;
+}
+h2{
+text-align: center;
+}
+
+/*-----Article Formatting-----*/
+
+/*-----Custom List-----*/
+
+.custom-list .mission-row{
+    text-align: center;
+}
+.mission-date {
+    display: inline-block;
+    padding-right: .5em;
+}
+.mission-customer {
+    color: #555;
+    width: 11%;
+    font-weight: bold;
+}
+.mission-site {
+    width: 24%;
+}
+.mission-vehicle {
+    width: 42%;
+}
