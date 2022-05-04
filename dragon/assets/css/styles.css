@@ -39,9 +39,7 @@ Bold 700*/
     font-weight: 700;
     letter-spacing: 0.4em;
 }
-.wide-font{
-    letter-spacing: 0.2em;
-}
+
 /*-----Box Sizing-----*/
 *{
     box-sizing: border-box;
@@ -55,6 +53,7 @@ html, body{
     background-color: rgb(35, 37, 40);
     margin: 0;
     padding: 0;
+    letter-spacing: .04em;
 }
 /*-----Header Format-----*/
 .main-header{
@@ -136,3 +135,16 @@ text-align: center;
 .mission-vehicle {
     width: 42%;
 }
+
+/* -----summary details-----*/
+
+details summary > *{
+    /*elevates block-level element h2*/
+    display: inline;
+}
+details summary{
+    /*gets rid of text cursor default*/
+    cursor:default;
+    list-style: none;
+}
+
