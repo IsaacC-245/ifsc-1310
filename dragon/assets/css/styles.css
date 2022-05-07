@@ -55,6 +55,9 @@ html, body{
     padding: 0;
     letter-spacing: .04em;
 }
+p{
+    margin: 2em;
+}
 /*-----Header Format-----*/
 .main-header{
     background-color: rgba(56, 53, 53, 0.309);
@@ -115,7 +118,11 @@ text-align: center;
 
 /*-----Article Formatting-----*/
 
+
 /*-----Custom List-----*/
+.mission-header{
+    font-weight: bold;
+}
 
 .mission-row{
     text-align: center;
@@ -154,6 +161,7 @@ details summary{
     /*gets rid of text cursor default*/
     cursor:default;
     list-style: none;
+
 }
 .collapsible-content{
     text-align: center;
