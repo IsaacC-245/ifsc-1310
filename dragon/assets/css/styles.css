@@ -193,18 +193,12 @@ summary{
   font-size: 1em;
   color: #05377b;
 }
-.contact-button{
+.contact-form{
   color:#05377b;
-  display: inline-block;
   text-decoration: none;
   border: 2px solid #05377b;
   padding: 15px 4%;
-  background: transparent ;
+  background: #4a6790c4 ;
   position: relative;
   cursor: default;
-}
-.contact-button:hover{
-  border: 2px solid #bbc3ce;
-  background: #bbc3ce;
-  transition: 1s;
 }
