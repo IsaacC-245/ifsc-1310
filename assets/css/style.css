@@ -1,37 +1,53 @@
 /*     Font Import     */
 @font-face{
     font-family: SquarePeg;
-    src:url("../font/SquarePeg-Regular.ttf");
+    src:url("/assets/font/SquarePeg-Regular.ttf");
 }
 /* ---------------Box Sizing----------------- */
-*{
+
+html {
     box-sizing: border-box;
-    font-family: SquarePeg;
-    color: azure;
-}
-/*     Background Image     */
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
 body{
-    background-image: url("../img/blackboard-background.jpeg");
-    background-size: cover;
-    background-repeat:repeat-y;
-    height: 200px;
-    width: 100vh;
+    font-family: SquarePeg;
+    margin: 0;
+    color: aliceblue;
+    cursor: default;
 }
-h1{
+header.primary{
+    background-image: url("/assets/img/blackboard-background.jpeg");
+    background-size:cover;
+    background-position:center;
+    padding: 40px;
+    margin: 0;
+}
+header.primary h1{
     text-align: center;
-    font-size: xxx-large;
+    font-size: 8vw;
     letter-spacing: 6px;
     border-bottom: 4px double #d8e5eccb;
-    margin-bottom: 0cm;
+    margin-bottom: 0;
 }
-h2{
+header.primary h2{
     text-align: center;
-    font-size: xx-large;
+    font-size: 7vw;
     letter-spacing: 4px;
     margin-top: 10px;
 }
-nav li{
-    font-size: x-large;
+header.primary nav li{
+    font-size: 5vw;
     letter-spacing: 2px;
     margin-left: 5%;
+    list-style: none;
+}
+header.primary nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    cursor: default;
 }

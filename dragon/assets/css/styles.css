@@ -1,8 +1,7 @@
-/*-----F
+
 /*-----Box Sizing-----*/
 *{
     box-sizing: border-box;
-    font-family: 'Barlow Condensed', sans-serif;
     color: azure;
 }
 *, *::before, ::after{
@@ -13,21 +12,19 @@ html, body{
     margin: 0;
     padding: 0;
     letter-spacing: .04em;
-    body {
-      font-family: 'Space Grotesk', sans-serif;
-    }
 }
 p{
     margin: 2em;
-    text-align: center;
     line-height: 1.4em;
+}
+img{
+  max-width: 100%;
 }
 /* ----- Utility Styles ---- */
 
 .container {
   width: 80vw;
   margin: 40px auto;
-  max-width: 900px;
 }
 
 .img-right {
@@ -52,43 +49,54 @@ p{
 }
 
 /*-----Header Format-----*/
-.main-header{
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+}
+h1, h2, h3{
+  text-align: center;
+}
+header.main-header{
   background-image: linear-gradient(rgb(1, 11, 25,0.7),rgba(54, 70, 92, 0.7)),url("/dragon/assets/images/header-background.jpeg");
-  vertical-align: middle;
   background-size: cover;
   padding: 20px;
-  /* !make img min for small screens*/
 }
-.nav{
-  display: flex;
-  padding: 2%, 6%;
-  justify-content: space-around;
-  align-items: center;
-}
-.main-header img{
+header.main-header img{
   width: 400px;
   height: auto;
   border: none;
   margin-bottom: 0px;
-}
-.main-nav{
-  flex: 1;
   text-align: center;
+  cursor: default;
 }
-.main-nav ul li{
-  list-style: none;
+header.main-header h1{
+  text-align: center;
+  padding: 5px;
+}
+header.main-header nav{
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+header.main-header nav ul{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.main-header ul li{
+  text-align: center;
   display: inline-flex;
   padding: 8px 12px;
   position: relative;
 }
-.main-nav ul li a{
-  color: aliceblue;
+header.main-header ul li a{
   text-decoration: none;
   font-size: 1.2em;
-  padding: 20px;
-
+  padding: 5px;
+  cursor: default;
 }
-.main-nav ul li::after{
+header.main-header ul li::after{
   content: '';
   width: 0%;
   height: 2px;
@@ -96,40 +104,60 @@ p{
   display: block;
   transition: 0.5s;
 }
-.main-nav ul li:hover::after{
+header.main-header ul li:hover::after{
   width: 100%;
 }
-.main-header h1{
-  color: aliceblue;
+#overview{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 40px;
+}
+
+/*-----Column Content------*/
+#configurations{
+  width: 80%;
+  margin: auto;
   text-align: center;
-  padding: 5px;
+  padding-top: 100px;
 }
-
-/*-----General Content------*/
-
-.content-section{
-    margin: 20px;
+#configurations .column{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
 }
-.container{
-    width: 80vw;
-    margin: 40px auto;
+#configurations .column p{
+  margin: 10px;
 }
-.section-header{
-    font-family: "Barlow Condensed - Medium";
-    text-align: center;
+#configurations .column img{
+  width: 100%;
+  border-radius: 10px;
 }
-h2, h3{
-text-align: center;
+#configurations .column h3{
+  margin-top: 16px;
+  margin-bottom: 14px;
+  text-align: center;
 }
-.configurations p{
+#configurations p{
+  padding: 0;
   text-align: left;
 }
 
-/*-----Custom List-----*/
+/* ----- Missions List ----- */
+#missions{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
 .mission-header{
     font-weight: bold;
 }
-
 .mission-row{
     text-align: center;
     border-bottom: 1px solid white;
@@ -143,7 +171,6 @@ text-align: center;
     display: inline-block;
     padding-left: .5em;
 }
-
 .mission-date {
     width: 15%;
 }
@@ -158,16 +185,21 @@ text-align: center;
 }
 
 /* -----summary details-----*/
-
+summary::marker{
+  content: "";
+}
+details > summary::webkit-details-marker{
+  content: "";
+  display: none !important;
+}
 details summary > *{
     /*elevates block-level element h2*/
     display: inline;
 }
-details summary{
+details > summary{
     /*gets rid of text cursor default*/
-    cursor:default;
+    cursor: default;
     list-style: none;
-
 }
 .collapsible-content{
     text-align: center;
@@ -179,26 +211,31 @@ summary{
     margin: 1em;
 }
 /* ----- Contact Page ----- */
-.contact-box{
-  width: 90%;
-  color: #010b19;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#contact-box{
+  width: 80%;
+  margin: auto;
   text-align: center;
+  padding-top: 40px;
 }
-.contact-box p{
-  margin: 10px 0 40px;
-  font-size: 1em;
-  color: #05377b;
-}
-.contact-form{
+
+#contact-box .contact-form{
   color:#05377b;
-  text-decoration: none;
-  border: 2px solid #05377b;
+  border: 2px solid #05367b8f;
   padding: 15px 4%;
-  background: #4a6790c4 ;
-  position: relative;
+  background: #1953a49c ;
   cursor: default;
+}
+/* ----- Footer ----- */
+#footer{
+  margin-top: 100px;
+  background-color: #0a1c35;
+}
+
+#footer h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
