@@ -55,9 +55,8 @@ body{
 #primary p{
     text-decoration: none;
     color: aliceblue;
-    margin: 40px;
+    padding-left: 60px;
     font-size: 4.5vw;
-
 }
 #primary .submissions li{
     color: aliceblue;

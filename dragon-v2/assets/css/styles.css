@@ -57,7 +57,7 @@ h1, h2, h3{
   text-align: center;
 }
 header.main-header{
-  background-image: linear-gradient(rgb(1, 11, 25,0.7),rgba(54, 70, 92, 0.7)),url("../images/header-background.jpeg");
+  background-image: linear-gradient(rgb(1, 11, 25,0.7),rgba(54, 70, 92, 0.7)),url("../img/header-background.jpeg");
   background-size: cover;
   padding: 20px;
 }
