@@ -7,47 +7,67 @@
 
 html {
     box-sizing: border-box;
-  }
+}
   *,
   *:before,
   *:after {
     box-sizing: inherit;
-  }
+}
+*{
+    cursor: default;
+}
 
+.container {
+    width: 80vw;
+    margin: 40px auto;
+
+}
 body{
     font-family: SquarePeg;
     margin: 0;
     color: aliceblue;
-    cursor: default;
-}
-header.primary{
     background-image: url("/assets/img/blackboard-background.jpeg");
     background-size:cover;
     background-position:center;
     padding: 40px;
     margin: 0;
 }
-header.primary h1{
+#primary h1{
     text-align: center;
     font-size: 8vw;
     letter-spacing: 6px;
     border-bottom: 4px double #d8e5eccb;
     margin-bottom: 0;
 }
-header.primary h2{
+#primary h2{
     text-align: center;
     font-size: 7vw;
     letter-spacing: 4px;
     margin-top: 10px;
 }
-header.primary nav li{
-    font-size: 5vw;
-    letter-spacing: 2px;
-    margin-left: 5%;
-    list-style: none;
-}
-header.primary nav li a{
+#primary h3{
+    text-align: center;
+    font-size: 6vw;
+    letter-spacing: 4px;
+    margin-top: 10px;
     color: aliceblue;
+}
+#primary p{
     text-decoration: none;
-    cursor: default;
+    color: aliceblue;
+    margin: 40px;
+    font-size: 4.5vw;
+
+}
+#primary .submissions li{
+    color: aliceblue;
+    font-size: 5vw;
+    list-style: none;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+#primary .submissions a{
+    color: aliceblue;
+    list-style: none;
+    text-decoration: none;
 }

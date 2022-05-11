@@ -1,0 +1,243 @@
+
+/*-----Box Sizing-----*/
+*{
+    box-sizing: border-box;
+    color: azure;
+}
+*, *::before, ::after{
+    box-sizing: inherit;
+}
+html, body{
+    background-color: rgb(35, 37, 40);
+    margin: 0;
+    padding: 0;
+    letter-spacing: .04em;
+}
+p{
+    margin: 2em;
+    line-height: 1.4em;
+}
+img{
+  max-width: 100%;
+}
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/*-----Header Format-----*/
+body{
+  font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+}
+h1, h2, h3{
+  text-align: center;
+}
+header.main-header{
+  background-image: linear-gradient(rgb(1, 11, 25,0.7),rgba(54, 70, 92, 0.7)),url("../images/header-background.jpeg");
+  background-size: cover;
+  padding: 20px;
+}
+header.main-header img{
+  width: 400px;
+  height: auto;
+  border: none;
+  margin-bottom: 0px;
+  text-align: center;
+  cursor: default;
+}
+header.main-header h1{
+  text-align: center;
+  padding: 5px;
+}
+header.main-header nav{
+  width: 80vw;
+  margin: 0 auto;
+  max-width: 900px;
+}
+header.main-header nav ul{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.main-header ul li{
+  text-align: center;
+  display: inline-flex;
+  padding: 8px 12px;
+  position: relative;
+}
+header.main-header ul li a{
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px;
+  cursor: default;
+}
+header.main-header ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: rgba(6, 61, 138, 0.667);
+  display: block;
+  transition: 0.5s;
+}
+header.main-header ul li:hover::after{
+  width: 100%;
+}
+#overview{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 40px;
+}
+
+/*-----Column Content------*/
+#configurations{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+#configurations .column{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+#configurations .column p{
+  margin: 10px;
+}
+#configurations .column img{
+  width: 100%;
+  border-radius: 10px;
+}
+#configurations .column h3{
+  margin-top: 16px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+#configurations p{
+  padding: 0;
+  text-align: left;
+}
+
+/* ----- Missions List ----- */
+#missions{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.mission-header{
+    font-weight: bold;
+}
+.mission-row{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.mission-row:last-child{
+    border: none;
+}
+.mission-item{
+    display: inline-block;
+    padding-left: .5em;
+}
+.mission-date {
+    width: 15%;
+}
+.mission-customer {
+    width: 40%;
+}
+.mission-site {
+    width: 20%;
+}
+.mission-vehicle {
+    width: 10%;
+}
+
+/* -----summary details-----*/
+#collapsible-container{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+details summary > *{
+    /*elevates block-level element h2*/
+    display: inline;
+}
+details > summary{
+    /*gets rid of text cursor default*/
+    cursor: default;
+    list-style: none;
+}
+.collapsible-content{
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+}
+ .collapsible-content p{
+  text-align: left;
+}
+summary{
+    margin: 1em;
+}
+/* ----- Contact Page ----- */
+#contact-box{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#contact-box .contact-form{
+  color:#05377b;
+  border: 2px solid #05367b8f;
+  padding: 15px 4%;
+  background: #1953a49c ;
+  cursor: default;
+}
+/* ----- Footer ----- */
+#footer{
+  margin-top: 100px;
+  background-color: #0a1c35;
+}
+
+#footer h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
